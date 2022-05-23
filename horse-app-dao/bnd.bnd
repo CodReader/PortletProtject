@@ -1,0 +1,6 @@
+Bundle-Name: horse-app-dao
+Bundle-SymbolicName: com.bogdan.lifray.daoapp.api
+Bundle-Version: 1.0.0
+Import-Package: com.bogdan.lifray.serviceapp.api,\ *
+Import-Package: com.bogdan.liferay.raceapi,\*
+

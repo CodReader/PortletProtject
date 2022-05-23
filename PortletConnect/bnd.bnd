@@ -1,0 +1,6 @@
+Bundle-Name: PortletConnect
+Bundle-SymbolicName: portletconnect
+Bundle-Version: 1.0.0
+Import-Package: randoms.portlet,\
+    *
+Export-Package: portletconnect.constants
