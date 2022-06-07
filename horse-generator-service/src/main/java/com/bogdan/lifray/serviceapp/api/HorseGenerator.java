@@ -1,7 +1,5 @@
 package com.bogdan.lifray.serviceapp.api;
 
-import com.bogdan.lifray.daoapp.api.Horse;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -9,9 +7,10 @@ import java.util.Random;
 public class HorseGenerator {
     private static final Random random = new Random();
 
-    private HorseGenerator() {}
+    private HorseGenerator() {
+    }
 
-    public static List<Horse> generateHorses(int horseSize) {
+   public static List<Horse> generateHorses(int horseSize) {
         List<Horse> horses = new ArrayList<>(horseSize);
         for (int i = 0; i < horseSize; i++) {
             horses.add(generateHorse());

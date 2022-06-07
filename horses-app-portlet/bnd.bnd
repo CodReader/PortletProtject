@@ -2,5 +2,4 @@ Bundle-Name: HoresesApp
 Bundle-SymbolicName: com.bogdan.liferay.horsesapp
 Bundle-Version: 1.0.0
 Export-Package: com.bogdan.liferay.horsesapp.constants
-Import-Package:  com.bogdan.lifray.serviceapp.api,\ *
-Import-Package: com.bogdan.lifray.daoapp.api,\ *
+Import-Package: *;resolution:=optional

@@ -2,6 +2,6 @@ Bundle-Name: horse-run-service
 Bundle-SymbolicName: com.bogdan.liferay.raceapi
 Bundle-Version: 1.0.0
 Export-Package: com.bogdan.liferay.raceapi.constants
-Import-Package:  com.bogdan.lifray.serviceapp.api,\ *
-Import-Package: com.bogdan.lifray.daoapp.api,\ *
+Import-Package:  com.bogdan.lifray.serviceapp.api
+
 

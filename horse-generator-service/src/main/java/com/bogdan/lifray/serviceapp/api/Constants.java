@@ -2,7 +2,8 @@ package com.bogdan.lifray.serviceapp.api;
 
 public class Constants {
 
-    private Constants(){}
+    private Constants() {
+    }
 
     public static final int MAX_AGE = 30;
     public static final int MIN_AGE = 8;

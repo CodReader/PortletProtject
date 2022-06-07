@@ -1,4 +1,0 @@
-Bundle-Name: Randoms
-Bundle-SymbolicName: randoms
-Bundle-Version: 1.0.0
-Export-Package: randoms.portlet
