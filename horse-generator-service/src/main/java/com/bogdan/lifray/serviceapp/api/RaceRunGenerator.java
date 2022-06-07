@@ -1,11 +1,10 @@
 package com.bogdan.lifray.serviceapp.api;
 
 
-import com.bogdan.lifray.daoapp.api.Horse;
-
 public class RaceRunGenerator {
 
-    private RaceRunGenerator(){}
+    private RaceRunGenerator() {
+    }
 
     public static int raceRun() {
         int raceTime;

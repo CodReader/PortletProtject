@@ -1,8 +1,5 @@
 package com.bogdan.lifray.serviceapp.api;
 
-import com.bogdan.lifray.daoapp.api.Horse;
-import com.bogdan.lifray.daoapp.api.RaceResult;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;

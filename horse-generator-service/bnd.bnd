@@ -2,4 +2,4 @@ Bundle-Name: horse-generator-service
 Bundle-SymbolicName: com.bogdan.lifray.serviceapp
 Bundle-Version: 1.0.0
 Export-Package: com.bogdan.lifray.serviceapp.api
-Import-Package: com.bogdan.lifray.daoapp.api,\ *
+

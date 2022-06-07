@@ -1,9 +1,6 @@
-<%@ page import="com.bogdan.lifray.daoapp.api.Horse" %>
-<%@ page import="com.bogdan.liferay.horsesapp.portlet.TestActionMethodPortlet" %>
 <%@ include file="/init.jsp" %>
 
 
-<%--<%=session.setAttribute("Horse", Horse)%>--%>
 <p>
     <b><%!
     %><liferay-ui:message key="testactionmethod.caption"/></b>
@@ -14,28 +11,33 @@
 <portlet:actionURL name="actionMethod1" var="sampleActionMethodURL">
 </portlet:actionURL>
 
-
-
 <aui:form action="<%=sampleActionMethodURL%>" method="POST">
 
     <br/>
 
 
-    <aui:input type="radio" name="horseType" value= "${Horse}" /> ${Horse}
+    <c:forEach var="Horse" items="${horses}" varStatus="status">
 
-    <aui:input type="radio" name="horseType" value="horse 2"/> horse2
 
-    <aui:input type="radio" name="horseType" value="horse 3"/> horse3
+            <aui:input type="radio" name="horse" value="${Horse}"/>
 
-    <aui:input type="radio" name="horseType" value="horse 4 "/> horse4
+            <aui:input type="radio" name="horse" value="${Horse}"/>
 
-    <aui:input type="radio" name="horseType" value="horse 5"/> horse5
+            <aui:input type="radio" name="horse" value="${Horse}"/>
 
-    <aui:input type="radio" name="horseType" value="horse 6"/> horse6
+            <aui:input type="radio" name="horse" value="${Horse}"/>
 
-    <aui:input type="radio" name="horseType" value="horse 7"/> horse7
+            <aui:input type="radio" name="horse" value="${Horse}"/>
 
-    <aui:input type="radio" name="horseType" value="horse 8"/> horse8
+            <aui:input type="radio" name="horse" value="${Horse}"/>
+
+            <aui:input type="radio" name="horse" value="${Horse}"/>
+
+            <aui:input type="radio" name="horse" value="${Horse}"/>
+
+
+
+    </c:forEach>
 
     <br/>
     Choose your horse and make a bet
@@ -43,7 +45,7 @@
 
     Bet: <aui:input type="number" name="bet"/>
 
-    <aui:button type="submit" />
+    <aui:button type="submit"/>
 
 </aui:form>
 
@@ -53,7 +55,6 @@
         ${bet}
     </p>
     <p><b>Horse number:</b>
-        ${horseType}
-       <%-- <%= request.getParameter("horseType")%>--%>
+        ${horse}
     </p>
 </form>
