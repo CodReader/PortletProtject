@@ -32,6 +32,7 @@ import java.util.logging.Logger;
         service = Portlet.class
 )
 public class TestActionMethodPortlet extends MVCPortlet {
+
     private static final Horse horse = new Horse(HorseGenerator.randomSpeed());
     private static final Logger logger = Logger.getLogger(TestActionMethodPortlet.class.getName());
 
