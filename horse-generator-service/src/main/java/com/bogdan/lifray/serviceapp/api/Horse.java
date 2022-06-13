@@ -7,19 +7,19 @@ public class Horse {
 
     private UUID id = UUID.randomUUID();
 
-    private static int modelSpeed = HorseGenerator.randomSpeed();
+    private static int modelSpeed;
 
     public void setId(UUID id) {
         this.id = id;
     }
 
     public static void setModelSpeed(int modelSpeed) {
-        Horse.modelSpeed = HorseGenerator.randomSpeed();
+        Horse.modelSpeed = modelSpeed;
     }
 
-     public Horse(int modelSpeed) {
-         this.modelSpeed = modelSpeed;
-     }
+    public Horse(int modelSpeed) {
+        this.modelSpeed = modelSpeed;
+    }
 
     public UUID getId() {
         return id;
@@ -37,3 +37,5 @@ public class Horse {
                 '}';
     }
 }
+
+
